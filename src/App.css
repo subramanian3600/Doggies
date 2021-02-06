@@ -1,38 +1,127 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap');
+
+header{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_heading{
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.breed_list{
+  margin: 10px auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.breed_name{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  list-style-type: none;
+}
+.breed_name:hover{
+  text-decoration: none;
+  color: blueviolet;
+  transition: ease-in all .5s;
+  background-color: #fff;
+}
+.breed_bred_for{
+  text-align: center;
+  padding: 0px 10px;
+  font-size:15px;
+}
+.breed_image{
+  width: 200px;
+  height:150px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.loading_box{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: loading 2s ease infinite;
+}
+@keyframes loading{
+  from{
+    transform: rotate(90deg);
+  }
+  to{
+    transform: rotate(180deg);
   }
 }
+/* breed info */
+.breedinfo_list{
+  width: 800px;
+  height: 400px;
+  background-color: #4f96b0;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.breedinfo_name{
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  font-family: 'Sriracha', cursive;
+}
+.breedinfo_temp{
+  background-color: burlywood;
+  padding: 5px;
+  text-align: center;
+}
+.breedinfo_life{
+  padding: 10px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+.breedinfo_group{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+.breedinfo_origin_title{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  padding: 10px;
+}
+.breedinfo_origin{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+.breedinfo_desc{
+  background-color: aliceblue;
+  width: 600px;
+  margin: 0 auto;
+}
+/* home page */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_bg{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: blanchedalmond;
+  height: 100vh;
+  width: 100%;
+}
+.button-breeds{
+  color: white;
+}
+.button-breeds:hover{
+  list-style-type: none;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
