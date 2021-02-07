@@ -42,7 +42,7 @@ function Breed(){
         <Card style={{ width: '20rem' }}>
             <Card.Img variant="top" src={breed.image.url} />
             <Card.Body>
-                <Card.Title><a href={`/Doggies/breeds/breedinfo/${breed.id}`} className="breed_name">{breed.name}</a></Card.Title>
+                <Card.Title><a href={`/breeds/breedinfo/${breed.id}`} className="breed_name">{breed.name}</a></Card.Title>
             </Card.Body>
         </Card>
         </CardGroup>

@@ -23,7 +23,7 @@ function HomePage(){
                         {...triggerHandler}
                         className="d-inline-flex align-items-center"
                         >
-                        <span className="ml-1"><a className="button-breeds" href={'/Doggies/breeds'}> Varieties of breeds</a></span>
+                        <span className="ml-1"><a className="button-breeds" href={'/breeds'}> Varieties of breeds</a></span>
                         </Button>
                         )}
                     </OverlayTrigger>

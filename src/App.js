@@ -10,9 +10,9 @@ const App=()=>{
   return (
     <div className="App">
       <BrowserRouter>
-      <Route exact path={"/Doggies"} component={HomePage}></Route>
-        <Route exact path={"/Doggies/breeds"} component={Breed}></Route>
-        <Route exact path={`/Doggies/breeds/breedinfo/:id`} component={BreedInfo}></Route>
+      <Route exact path={"/"} component={HomePage}></Route>
+        <Route exact path={"/breeds"} component={Breed}></Route>
+        <Route exact path={`/breeds/breedinfo/:id`} component={BreedInfo}></Route>
       </BrowserRouter>
     </div>
   );
