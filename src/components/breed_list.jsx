@@ -35,7 +35,6 @@ function BreedInfo(){
             <h4 className="breedinfo_life">Life Span : {breedsinfo.data.life_span}</h4>
             <h4 className="breedinfo_group">Breed Group : {breedsinfo.data.breed_group}</h4>
             <h4 className="breedinfo_origin">{breedsinfo.data.origin}</h4>
-            <h4 className="breedinfo_desc">{breedsinfo.data.description}</h4>
         </div> 
     )
     }
